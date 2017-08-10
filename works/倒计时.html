@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="myapp">
+<head>
+<meta charset="UTF-8">
+<title>倒计时</title>
+<script src="angular.min.js"></script>
+<script>
+var m1=angular.module('myapp',[]);
+m1.controller('count',['$scope','$interval',function ($scope,$interval) {
+	var iNow=5;
+	$scope.text=iNow+'s';
+	//ture在这里也要打引号
+	$scope.isDisabled= 'ture';
+	var timer=$interval(function(){
+		iNow--;
+	$scope.text=iNow+'s';
+	if(iNow==0){
+		$interval.cancel(timer);
+		$scope.isDisabled='false';
+		$scope.text='可以点击了'
+		}	
+		},1000)
+	
+	}])
+</script>
+<style>
+	input{
+		width: 500px;
+		height: 400px;
+		border: 1px solid red;
+		
+	}
+</style>
+</head>
+
+<body ng-controller="count" >
+<input type="button" value="{{text}}" ng-disabled="isDisabled">
+</body>
+</html>

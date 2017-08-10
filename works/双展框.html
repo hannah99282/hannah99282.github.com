@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js6</title>
+<style>
+#div1{width:1000px;height:500px;margin:0 auto;}
+#div1 div{float:left;width:400px;height:400px;border:10px solid green;position:relative;margin:20px;}
+#div1 img{width:400px;height:400px;}
+#div1 p ,span{width:400px;height:40px;background:#A1A1A1;filter:alpha(opacity:80);opacity:0.8;position:absolute;margin:0;font-size:20px;line-height:40px;text-align:center;color:#1052DA;}
+#div1 p{top:0;left:0;}
+#div1 span{bottom:0;left:0;}
+</style>
+<script>
+window.onload=function () {
+var oDiv=document.getElementById('div1');
+var aP=oDiv.getElementsByTagName('p');
+var aSpan=oDiv.getElementsByTagName('span');
+var aImg=oDiv.getElementsByTagName('img');
+var aInput=oDiv.getElementsByTagName('input');
+
+
+var arrImag1=['img1.jpg','img2.jpg','img3.jpg','img4.jpg'];
+var  arrText1=['铅笔','水','星星','美女'];
+var arrImag2=['img5.jpg','img6.jpg','img7.jpg'];
+var arrText2=['绚烂','光','竹子'];
+var num1=0;
+var num2=0;
+
+function fntab1() {
+aSpan[0].innerHTML=num1+1+'/'+arrImag1.length;
+aP[0].innerHTML=arrText1[num1];
+aImg[0].src=arrImag1[num1];
+}
+fntab1() ;
+function fntab2() {
+aSpan[1].innerHTML=num2+1+'/'+arrImag2.length;
+aP[1].innerHTML=arrText2[num2];
+aImg[1].src=arrImag2[num2];
+}
+fntab2() ;
+function abc1(){
+		num1++;
+		if(num1==arrImag1.length){
+			num1=0;
+			}
+	fntab1() ;
+		}
+function abc2(){
+		num2++;
+		if(num2==arrImag2.length){
+			num2=0;
+			}
+	  fntab2() ;
+		}
+function abc11(){
+		num1--;
+		if(num1==-1){
+			num1=arrImag1.length-1;
+			}
+	fntab1() ;
+		}
+function abc22(){
+		num2--;
+		if(num2==-1){
+			num2=arrImag2.length-1;
+			}
+	  fntab2() ;
+		}
+
+aImg[0].onclick=abc1;
+aImg[1].onclick=abc2;
+	
+		
+aInput[0].onclick=function (){
+		abc11();
+		abc22();
+		}
+
+   aInput[1].onclick=function (){
+		abc1();
+		abc2();
+		}
+
+	}
+
+</script>
+</head>
+
+<body>
+<div id="div1">
+   <form id="form">
+<input type="button" value="上一张"/>
+<input type="button" value="下一张"/>
+  </form>
+   <div>
+      <span></span>
+	   <img src=" " alt=""  />
+        <p></p>
+     </div>
+     <div>
+      <span>1/3</span>
+	   <img src=" ">
+        <p></p>
+     </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+
+ header .container    #header-leftnav {
+ position: relative;
+ left: -10px;
+ 	min-width: 220px;
+ 	border: 3px solid #00bcd4 ; 
+padding: 0;
+ }
+
+  header   .container  #header-leftnav div  div{
+ 	margin: 0 10px;	
+ 	height: 72px;
+ 	border-bottom: 1px solid #efefef;
+ }
+ header  .container  #header-leftnav div:hover{
+ 	border: 1px solid #00BCD4;
+ 	border-right: none;
+ 	border-left: none;
+  }
+
+  header .container  #header-leftnav  div div:hover{
+  border: none;  }
+  
+ header  .container   #header-leftnav  div div h4{
+ 	padding: 14px 0 0 38px ;
+ }
+ header    .container  #header-leftnav div div ul{
+ font-family: arial;
+ font-size: 12px;
+ 	padding: 8px 0 14px 38px;
+ }
+ header .container   #header-leftnav div div  ul li {
+ 	display: inline-block;
+ }
+  header .container   #header-leftnav div div  ul li  a{
+  	padding: 0 5px;
+  }
+  
+ header  .container  #header-leftnav   div div ul li a:hover{ 
+ color: #0084BB;
+ }
+
+/*.tooltip-inner{
+			
+			background: green;
+			max-width: 1200px;
+			left: 100px;
+		}
+
+.tooltip-inner  #toolTipstyle{
+	width: 400px;
+			height: 500px;
+			border: red;
+}*/
+
+
+
+
+header .container  #middlepart{
+	/*border:  1px  solid black ; */
+	height: 500px; 
+	max-width: 624px; 
+	min-width: 474px;
+	margin: 0 10px 0  0px;
+	padding: 0;
+}
+header   .container  #middlepart ul li{
+	float: left;
+}
+/*header  #middlepart  .row{
+	position: relative;
+	
+}*/
+
+header .container    #middlepart  .row  .headermid-bottom {
+	display: inline-block;
+	border: 1px solid #e6e6e6;
+	/*padding: 0;*/
+	margin-top: 8px;
+	/*max-width: 208px;*/
+	/*min-width: 160px;*/
+	padding: 0px  2px 0 2px;
+	
+	/*padding: 11px 20px;*/
+	text-align: center;
+}
+header   .container  #middlepart  .row  .headermid-bottom  div{
+	font-family: arial;
+	display: inline-block;
+	
+	padding-top:10px ;
+	
+
+}
+header  .container  #middlepart  .row  .headermid-bottom  img {
+	margin: 10px 0 10px 0;
+	
+}
+
+header  .container  #middlepart  .row  .headermid-bottom  div span{
+	width: 98px!important;
+	font-size: 12px;
+	color: #a69e99;
+}
+
+
+
+header .container   #header-rightpart{
+	
+	
+	min-width: 240px;
+	padding: 0;
+}
+header   .container #header-rightpart #header-rightpart-tip {
+height: 125px;
+width: 240px;
+padding: 22px 0px 0px 40px;
+margin-bottom:10px;
+border: 1px solid #00afc7;
+border-top: 2px solid #00afc7;
+background: url(../img/headerrighttip-bg.png) no-repeat 10px 20px;
+}
+header .container   #header-rightpart #header-rightpart-tip a{
+	display: inline-block;
+	font-size: 15px;
+	color: #0084BB;
+	padding-bottom: 15px;
+	
+}
+header  .container #header-rightpart #header-rightpart-tip p {
+	font-family: arial;
+font-size: 12px;
+color: #666666;
+}
+header  .container  #header-rightpart #header-rightpart-tip p span{
+	color: #ff7043;
+	font-weight: bold;
+}
+
+header  .container  #header-rightpart  #myTab li{
+	float: left;
+	width: 25%;
+	height: 70px;
+	border: 1px solid #e6e6e6;
+	text-align: center;
+	border-left: none;
+	padding-top: 10px;
+	background: #fbfbfb;
+	border-bottom: none;
+}
+header  .container  #header-rightpart  #myTab li:nth-of-type(1)
+{border-left: 1px solid #e6e6e6;}
+
+header  .container  #header-rightpart  #myTab .active{
+	border: 1px solid #ff9800 !important;
+	border-bottom: #fff !important;
+	border-top: 2px solid #ff9800 !important;
+	margin-top: 1px;
+	background: #fff;
+	
+}
+header  .container  #header-rightpart  #myTab li a{
+	display: inline-block;
+	font-size: 12px;
+	font-family: arial;
+	color: #000000;
+padding-top: 35px;
+	width:55px ;
+	height: 68px;
+	display: block;
+	margin: auto;
+	
+	
+}
+
+/*header .container  #header-rightpart  #myTab li a img{
+	
+}*/
+header   .container  #header-rightpart  .tab-content{
+	height: 225px;
+	margin-top: 90px;
+	background: none;
+	padding: 0;
+	border: 1px solid #ff9800;
+
+}

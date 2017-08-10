@@ -1,0 +1,273 @@
+	body,ul {
+				padding: 0;
+				margin: 0;
+				
+			}
+			
+			
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			nav{
+				width: 100%;
+				height: 50px;
+				
+				background: #000000;
+				position: fixed;
+				top: 0px;
+				z-index: 1;
+			}
+			nav .nav {
+				width: 80%;
+				margin: auto;
+				min-width: 600px;
+				
+							}
+			
+			nav .nav span{
+				font-size: 30px;
+				color: #FFFFFF;
+				line-height: 50px;
+				}
+			nav .nav ul{
+				float: right;
+				line-height: 50px;
+				height:50px;				
+				display: inline-block;
+			}
+			nav .nav ul .list{	
+				margin: 0 15px;		
+				display: inline-block;
+			}
+			nav .nav ul .list a{
+				font-family: "times new roman";
+				color: #FFFFFF;
+				font-size: 15px;
+			}
+			nav .nav ul .list a:hover{
+				color:#ecef16;
+			}
+			
+
+
+#inform{
+	height: 700px;
+padding-top:100px ;
+}
+#inform div{
+	width:680px ;
+	height: 453px;
+	margin: auto;
+	margin-bottom: 100px;
+}
+#inform div img{
+	width:266px ;
+	height:362px ;
+	float: right;
+	margin-top: 40px;
+border-radius: 50%;
+
+}
+#inform  div .informs{
+	float: left;
+	width: 400px;
+	height: 450px;
+	display: inline-block;
+	
+}
+#inform div  .informs h1{
+	font-size: 40px;
+}
+#inform div .informs p{
+	font-family: "times new roman";
+	font-weight: bold;
+	line-height: 20px;
+}
+/*#inform article{
+	font-family: "times new roman";
+font-size: 15px;
+	
+	width: 100%;
+	height: auto;
+	margin: auto;
+}*/
+
+
+
+#skill{
+	text-align: center;
+	padding: 150px 0;
+	background-color: rgba(114,114,119,0.3);
+	min-width: 1000px;
+	
+}
+
+	
+
+#skill  div{
+	width: 200px;
+	height: auto;
+	display: inline-block;
+	border: 2px solid black;
+	margin: 60px 20px 0 20px;
+	vertical-align: top;
+}
+#skill div p{
+	
+	font-size: 18px;
+	font-family: "times new roman";
+	margin: 0;
+	line-height: 40px;
+	
+}
+#skill div p:nth-of-type(1){
+	
+	background:#000000 ;
+	color: #FFFFFF;
+}
+#skill div .p{
+	text-align: left;
+	padding-left: 10px;
+}
+#skill div .p:hover{
+	background:#000000 ;
+	color: #FFFFFF;
+}
+
+#experience{
+	width: 100%;
+	
+	padding: 120px 0;
+	height: auto;
+}
+#experience .exp{
+	width:865px ;
+	height: auto;
+	margin: auto;
+}
+#experience .title-exp{
+	vertical-align: top;
+	width: 40px;
+	height: 230px;
+	background: #000000;
+	display: inline-block;
+	margin:150px  300px 0 0;
+	padding: 10px 0;
+	font-size: 40px;
+	color: #FFFFFF;
+	font-family: arial;
+	border-radius: 30px;
+}
+#experience   .content{
+	height: auto;
+	
+	width: 500px;
+	font-family: "times new roman";
+	position: relative;
+	display: inline-block;
+	
+}
+#experience .content img{
+position: absolute;
+top: -20px;
+left: 0px;
+	width: 3px;
+	height: 600px;
+	border-radius: 10px;
+}
+#experience  .content  span{
+	padding: 5px;
+	position: absolute;
+	font-family: "times new roman";
+	border: 1px solid black;
+	border-radius: 5px;
+	
+	
+}
+#experience .content span:nth-of-type(1){top:12px ; left: -142px;}
+#experience .content  span:nth-of-type(2){top:150px ;left:-112px;}
+#experience  .content span:nth-of-type(3){top:278px ;left:-126px;}
+#experience  .content span:nth-of-type(4){top:410px ;left:-142px;}
+#experience  .content  span:nth-of-type(5){top:510px ;left:-110px;}
+#experience  .content .content{
+	
+}
+#experience .content   h4{
+	margin: 0;
+	line-height: 30px;
+}
+#experience .content   p{
+	color: #7f1e1e;
+	margin: 0;
+	font-size: 18px;
+	line-height: 25px;
+}
+#experience  .content  .content-part{
+	width: auto;
+	padding: 10px 20px;
+	margin: 0 10px 30px 10px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	position: relative;
+	text-align: left;
+}
+#experience  .content .content-part:after{
+	content: ' ';
+
+            height: 0;
+
+            position: absolute;
+
+            width: 0;
+
+            border: 10px solid transparent;
+               border-left-color:black;
+            border-right-color: black;
+
+            top: 20px;
+
+            left: -20px;
+
+}
+
+#papers{
+	height: auto;
+	background: #9090cd;
+	padding: 80px   200px 100px 200px;
+}
+ #papers a{
+ 	width: 300px;
+ 	height: 150px;
+ 	display: inline-block;
+ 	background-color:rgba(0,0,0,1) ;
+ 	margin: 20px;
+ 	line-height: 150px;
+ 	text-align: center;
+ 	color:#9090cd;
+ 	font-family: "times new roman";
+ 	font-size: 25px;
+ 	border-radius: 20px;
+ }
+ #papers a:hover{
+  box-shadow: 0px 0px 50px yellow;
+ }
+ 
+ 
+ 
+ 
+#contact{
+		height: 500px;
+	background: pink;
+	text-align: center;
+	padding-top: 250px;
+	}
+	#contact p{
+	padding: 0;
+	font-size: 40px;
+	color: #000000;
+	font-family: "times new roman";
+	
+}

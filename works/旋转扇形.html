@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>旋转扇形</title>
+<style>
+#box{width:800px;height:500px;background:url(../img2.jpg) no-repeat;position:relative;margin:auto;}
+#box  div{width:200px;height:50px;border-radius:9px;position:absolute;left:300px;top:300px;transition:1s;transform-origin:15px 25px;}
+#box  div:nth-of-type(1){background-color:red;}
+#box  div:nth-of-type(2){background-color:yellow;}
+#box  div:nth-of-type(3){background-color:orange;}
+#box  div:nth-of-type(4){background-color:gray;}
+#box  div:nth-of-type(5){background-color:black;}
+#box  div:nth-of-type(6){background-color:green;}
+#box  div:nth-of-type(7){background-color:purple;}
+#box  div:nth-of-type(8){background-color:blue;}
+#box  div:nth-of-type(9){background-color:#C3C;}
+#box  div:nth-of-type(10){background-color:#06C;}
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById("box");
+	var aDiv=oDiv.getElementsByTagName("div");
+	var onoff=true;
+	
+	setTimeout(go(),1000);
+	aDiv[aDiv.length-1].onclick=function(){
+		
+		onoff?go():close();
+		onoff=!onoff
+		}
+		
+	for(var i=0;i<aDiv.length-1;i++){
+		   aDiv[i].index=i;
+		aDiv[i].onclick=function(){
+			for(var i=0; i<aDiv.length-1;i++){
+				if(i<this.index){
+				aDiv[i].style.transform="rotate("+(340-i*6)+"deg)";
+					}
+				if(i>this.index){
+				aDiv[i].style.transform="rotate("+(270-i*10)+"deg)";	
+					}
+				}
+			
+		aDiv[this.index].style.transform="rotate(270deg)";
+		    }
+		}
+	
+	
+	function close(){
+		for(var i=0;i<aDiv.length;i++){
+			aDiv[i].style.transform="rotate(0deg)";
+			}
+		}
+	
+	function go(){
+		for(var i=0;i<aDiv.length;i++){
+			aDiv[i].style.transform="rotate("+ (340-i*17)+"deg)";
+			}
+		
+		}
+	}
+
+</script>
+</head>
+
+<body>
+ <div id="box">
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js4</title>
+<style>
+ul{padding:0;margin:0;}
+li {list-style:none;}
+#div1{width:800px;height:400px;margin:0 auto; position:relative;}
+ #img{width:800px;height:400px;}
+#div1 span{width:40px;height:40px;font-size:15px;line-height:40px;text-align:center;color:red;position:absolute;top:50%;background:#999;filter:alpha(opacity:60);opacity:0.6;}
+#div1  .span1{left:10px;}
+#div1  .span2{right:10px;}
+#div1 .list{ position:absolute;height:20px;bottom:-30px;left:350px;}
+#div1  li{ float:left;width:20px;height:20px;background:#F06;margin-right:10px; position:relative;}
+#div1 .active {background:#0FC;}
+#div1 .list img{width:40px;height:40px;position:absolute;top:-45px;left:5px;display:none;}
+</style>
+<script>
+window.onload= function () {
+	var oDiv=document.getElementById('div1');
+	var oImg=document.getElementById('img');
+	var oUl=oDiv.getElementsByTagName('ul')[0];
+    var aImg=oUl.getElementsByTagName('img');
+	 var aLi=oUl.getElementsByTagName('li');	
+	var aSpan=oDiv.getElementsByTagName('span');
+	
+	var arrImg=[ 'img1.jpg', 'img2.jpg', 'img3.jpg',  'img4.jpg','img5.jpg',  'img6.jpg', 'img7.jpg' ];
+	var  num=0 
+	
+	 for  (var i=0;i<arrImg.length;i++){
+		 oUl.innerHTML +='<li><img src=  /></li>' ;
+		}
+    for (var i=0;i<arrImg.length;i++){ 
+	  aImg[i].src=arrImg[i];}
+	  
+	  for (var i=0;i<arrImg.length;i++){
+		  aLi[i].index=i ;
+		 aLi[i] .onclick=function(){
+		oImg.src=arrImg [this.index];
+		 for (var i=0;i<arrImg.length;i++){
+		   aLi[i] .className='';}
+		   aLi[this.index].className='active';
+		   aImg[this.index] .style.display='none';
+		  }
+		 aLi[i] .onmouseover=function(){
+			aImg[this.index] .style.display='block';
+			}
+			aLi[i] .onmouseout=function(){
+			aImg[this.index] .style.display='none';
+			}
+			
+		   }
+	  
+	  	aSpan[0].onclick=function (){
+	  num-- ;
+	   if(num==-1){
+		  num=arrImg.length-1;
+		  }
+		   for (var i=0;i<arrImg.length;i++){
+		   aLi[i] .className='';
+		   }
+	  oImg.src=arrImg[num];
+	  aLi[num].className='active';
+	  
+	}
+	aSpan[1].onclick=function (){
+	  num++ ;
+	   if(num==arrImg.length){
+		  num=0;
+		  }
+		   for (var i=0;i<arrImg.length;i++){
+		   aLi[i] .className='';
+		   }
+	  oImg.src=arrImg[num];
+	  aLi[num].className='active';
+	}
+
+	  
+
+	}
+
+</script>
+</head>
+
+<body>
+<div  id="div1">
+   <img id="img" src="img1.jpg" alt=""/>
+   <span class="span1">《</span>
+   <span class="span2">》</span>
+  
+   <ul class="list">
+   
+   </ul>
+   		
+</div>
+</body>
+</html>

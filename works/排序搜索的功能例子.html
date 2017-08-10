@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html   ng-app="myApp">
+<head  >
+<meta charset="utf-8">
+<title>搜索排序</title>
+<script src="angular.min.js"></script>	
+<script>
+	var m1=angular.module('myApp',[]);
+	m1.controller('mytable',['$scope','$filter',function  ($scope,$filter) {
+		$scope.orldataList=[
+          {name:'car',age:'18'},
+          {name:'bus',age:'20'},
+          {name:'am',age:'26'},
+          {name:'dirt',age:'23'},
+          {name:'ege',age:'24'},
+          {name:'frg',age:'30'}
+		];
+		$scope.dataList=[
+          {name:'car',age:'18'},
+          {name:'bus',age:'20'},
+          {name:'am',age:'26'},
+          {name:'dirt',age:'23'},
+          {name:'ege',age:'24'},
+          {name:'frg',age:'30'}
+		];
+		
+		$scope.fnSort= function  (arg) {
+			//这是一个开关，给name 和age各自加了一个开关，互不影响
+			arguments.callee['fnSort'+arg]=!arguments.callee['fnSort'+arg]
+		 $scope.dataList=$filter('orderBy') ($scope.dataList,arg,arguments.callee['fnSort'+arg]);
+	};
+
+	$scope.fnFilter=function  ( ) {
+		
+		$scope.dataList=$filter('filter') ($scope.orldataList,$scope.filterVal);
+	};
+			
+	}	] )
+	
+</script>
+</head>
+<body  ng-controller="mytable">
+	<!--这里把model写成了modle检查了很久-->
+	<input type="text"  ng-model="filterVal" >
+	<input  type="button"  ng-click="fnFilter()"  value="搜索">
+	<table border="1px" >
+		<tr>
+			<!--这里传入参数没有加引号又检查了好久-->
+			<th ng-click="fnSort('name')">名字</th>
+			<th ng-click="fnSort('age')">年龄</th>
+		</tr>
+		<tr   ng-repeat="data in dataList ">
+			<td >{{data.name}}</td>
+			<td >{{data.age}}</td>
+		</tr>
+	</table>
+</body>
+</html>
