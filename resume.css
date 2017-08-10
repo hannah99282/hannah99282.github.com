@@ -24,7 +24,7 @@
 				width: 80%;
 				margin: auto;
 				min-width: 600px;
-				
+				height:50px;
 							}
 			
 			nav .nav span{
@@ -151,7 +151,7 @@ font-size: 15px;
 #experience .title-exp{
 	vertical-align: top;
 	width: 40px;
-	height: 230px;
+	height: auto;
 	background: #000000;
 	display: inline-block;
 	margin:150px  300px 0 0;
@@ -170,12 +170,13 @@ font-size: 15px;
 	display: inline-block;
 	
 }
-#experience .content img{
+#experience .content i{
 position: absolute;
 top: -20px;
 left: 0px;
 	width: 3px;
 	height: 600px;
+	background:#000000;
 	border-radius: 10px;
 }
 #experience  .content  span{
@@ -187,11 +188,11 @@ left: 0px;
 	
 	
 }
-#experience .content span:nth-of-type(1){top:12px ; left: -142px;}
-#experience .content  span:nth-of-type(2){top:150px ;left:-112px;}
-#experience  .content span:nth-of-type(3){top:278px ;left:-126px;}
-#experience  .content span:nth-of-type(4){top:410px ;left:-142px;}
-#experience  .content  span:nth-of-type(5){top:510px ;left:-110px;}
+#experience .content span:nth-of-type(1){top:15px ; left: -123px; width:102px;}
+#experience .content  span:nth-of-type(2){top:153px ;left:-100px;width:80px;}
+#experience  .content span:nth-of-type(3){top:280px ;left:-112px;width:91px;}
+#experience  .content span:nth-of-type(4){top:412px ;left:-123px;width:102px;}
+#experience  .content  span:nth-of-type(5){top:514px ;left:-110px;width:90px;}
 #experience  .content .content{
 	
 }
