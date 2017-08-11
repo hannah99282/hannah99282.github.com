@@ -55,13 +55,13 @@
 
 #inform{
 	height: 700px;
-padding-top:100px ;
+padding-top:80px ;
 }
 #inform div{
 	width:680px ;
 	height: 453px;
 	margin: auto;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 #inform div img{
 	width:266px ;
@@ -86,14 +86,14 @@ border-radius: 50%;
 	font-weight: bold;
 	line-height: 20px;
 }
-/*#inform article{
+#inform article{
 	font-family: "times new roman";
-font-size: 15px;
-	
-	width: 100%;
+font-size: 18px;
+	color:green;
+	max-width: 920px;
 	height: auto;
 	margin: auto;
-}*/
+}
 
 
 
