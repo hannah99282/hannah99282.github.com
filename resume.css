@@ -236,7 +236,7 @@ left: 0px;
 }
 
 #papers{
-	width:100%;
+	min-width: 1000px;
 	height: auto;
 	background: #9090cd;
 	padding: 80px 0;
@@ -270,7 +270,7 @@ left: 0px;
  
  
 #contact{
-	width:100%;
+	min-width: 1000px;
 		height: 500px;
 	background: pink;
 	text-align: center;
