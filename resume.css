@@ -65,7 +65,7 @@ padding-top:80px ;
 }
 #inform div img{
 	width:266px ;
-	height:362px ;
+	height:350px ;
 	float: right;
 	margin-top: 40px;
 border-radius: 50%;
@@ -108,11 +108,11 @@ font-size: 18px;
 	
 
 #skill  div{
-	width: 200px;
+	width: 250px;
 	height: auto;
 	display: inline-block;
 	border: 2px solid black;
-	margin: 60px 20px 0 20px;
+	margin: 60px 30px 0 30px;
 	vertical-align: top;
 }
 #skill div p{
@@ -205,7 +205,7 @@ left: 0px;
 }
 #experience  .content  .content-part{
 	width: auto;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	margin: 0 10px 30px 10px;
 	border: 1px solid #000000;
 	border-radius: 10px;

@@ -9,7 +9,7 @@ var m1=angular.module('myapp',[]);
 m1.controller('count',['$scope','$interval',function ($scope,$interval) {
 	var iNow=5;
 	$scope.text=iNow+'s';
-	//ture在这里也要打引号
+	
 	$scope.isDisabled= 'ture';
 	var timer=$interval(function(){
 		iNow--;

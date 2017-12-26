@@ -25,7 +25,7 @@
 		];
 		
 		$scope.fnSort= function  (arg) {
-			//这是一个开关，给name 和age各自加了一个开关，互不影响
+			
 			arguments.callee['fnSort'+arg]=!arguments.callee['fnSort'+arg]
 		 $scope.dataList=$filter('orderBy') ($scope.dataList,arg,arguments.callee['fnSort'+arg]);
 	};
@@ -40,12 +40,12 @@
 </script>
 </head>
 <body  ng-controller="mytable">
-	<!--这里把model写成了modle检查了很久-->
+	
 	<input type="text"  ng-model="filterVal" >
 	<input  type="button"  ng-click="fnFilter()"  value="搜索">
 	<table border="1px" >
 		<tr>
-			<!--这里传入参数没有加引号又检查了好久-->
+			
 			<th ng-click="fnSort('name')">名字</th>
 			<th ng-click="fnSort('age')">年龄</th>
 		</tr>
